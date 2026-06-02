@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LTM Holdings | Innovative IT Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#0f172a;
+  --secondary:#2563eb;
+  --light:#f8fafc;
+  --dark:#111827;
+  --gray:#64748b;
+  --white:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  color:var(--dark);
+  line-height:1.6;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+header{
+  background:white;
+  position:fixed;
+  width:100%;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 0;
+}
+
+.logo{
+  font-size:1.8rem;
+  font-weight:800;
+  color:var(--secondary);
+}
+
+.menu{
+  display:flex;
+  gap:25px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:500;
+}
+
+.hero{
+  min-height:100vh;
+  background:linear-gradient(rgba(15,23,42,.9), rgba(15,23,42,.85)),
+  url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  color:white;
+}
+
+.hero-content{
+  max-width:700px;
+}
+
+.hero h1{
+  font-size:4rem;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  margin-bottom:30px;
+  color:#d1d5db;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.btn-primary{
+  background:var(--secondary);
+  color:white;
+}
+
+.btn-outline{
+  border:2px solid white;
+  color:white;
+  margin-left:10px;
+}
+
+section{
+  padding:100px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-title h2{
+  font-size:2.5rem;
+  margin-bottom:15px;
+}
+
+.section-title p{
+  color:var(--gray);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+  margin-bottom:15px;
+}
+
+.about{
+  background:var(--light);
+}
+
+.services{
+  background:white;
+}
+
+.stats{
+  background:var(--primary);
+  color:white;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  text-align:center;
+}
+
+.stat h3{
+  font-size:3rem;
+  color:#60a5fa;
+}
+
+.testimonials{
+  background:var(--light);
+}
+
+.testimonial{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.contact{
+  background:white;
+}
+
+form{
+  max-width:700px;
+  margin:auto;
+}
+
+input,
+textarea{
+  width:100%;
+  padding:15px;
+  margin-bottom:15px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+}
+
+button{
+  background:var(--secondary);
+  color:white;
+  border:none;
+  padding:15px 30px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+  font-size:2.7rem;
+}
+
+.menu{
+  display:none;
+}
+
+.stats-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">LTM Holdings</div>
+
+<div class="menu">
+<a href="#about">About</a>
+<a href="#difference">Why Us</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+
+<div class="hero-content">
+
+<h1>Crafting Technology That Drives Business Growth</h1>
+
+<p>
+LTM Holdings delivers innovative IT solutions through exceptional craftsmanship,
+local expertise, and forward-thinking technology strategies.
+</p>
+
+<a href="#contact" class="btn btn-primary">Get Started</a>
+<a href="#services" class="btn btn-outline">Our Services</a>
+
+</div>
+
+</div>
+</section>
+
+<section id="difference">
+
+<div class="container">
+
+<div class="section-title">
+<h2>What Makes Us Different</h2>
+<p>Technology built with purpose, quality, and innovation.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Exceptional Craftsmanship</h3>
+<p>
+We build reliable, secure, and scalable technology solutions
+with attention to every detail.
+</p>
+</div>
+
+<div class="card">
+<h3>Local Focus</h3>
+<p>
+We understand local businesses and provide personalized
+service that creates lasting partnerships.
+</p>
+</div>
+
+<div class="card">
+<h3>Innovation First</h3>
+<p>
+From cloud technologies to AI and automation,
+we help businesses stay ahead of the competition.
+</p>
+</div>
+
+<div class="card">
+<h3>Customer-Centered Approach</h3>
+<p>
+Every project starts with understanding your goals,
+ensuring solutions that deliver measurable results.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About LTM Holdings</h2>
+</div>
+
+<p style="max-width:900px;margin:auto;text-align:center;font-size:1.1rem;">
+LTM Holdings is an innovative IT company focused on helping organizations
+transform through technology. We provide software development, cloud solutions,
+cybersecurity services, IT consulting, and digital innovation strategies that
+help businesses grow, operate efficiently, and compete in a rapidly changing market.
+</p>
+
+</div>
+
+</section>
+
+<section id="services" class="services">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Comprehensive technology solutions for modern businesses.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Software Development</h3>
+<p>Custom web, mobile, and enterprise applications.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Solutions</h3>
+<p>Scalable infrastructure and cloud migration services.</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity</h3>
+<p>Protecting businesses from modern security threats.</p>
+</div>
+
+<div class="card">
+<h3>IT Consulting</h3>
+<p>Technology planning and digital transformation strategies.</p>
+</div>
+
+<div class="card">
+<h3>AI & Automation</h3>
+<p>Smart systems that improve productivity and efficiency.</p>
+</div>
+
+<div class="card">
+<h3>Managed IT Services</h3>
+<p>Reliable support and ongoing technology management.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat">
+<h3>50+</h3>
+<p>Projects Delivered</p>
+</div>
+
+<div class="stat">
+<h3>98%</h3>
+<p>Client Satisfaction</p>
+</div>
+
+<div class="stat">
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Support Available</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonials">
+
+<div class="container">
+
+<div class="section-title">
+<h2>What Clients Say</h2>
+</div>
+
+<div class="grid">
+
+<div class="testimonial">
+<p>
+"LTM Holdings helped modernize our systems and improve efficiency across our organization."
+</p>
+<br>
+<strong>Business Client</strong>
+</div>
+
+<div class="testimonial">
+<p>
+"Their expertise, responsiveness, and commitment to quality exceeded expectations."
+</p>
+<br>
+<strong>Technology Partner</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Ready to Grow With Technology?</h2>
+<p>Let's discuss how LTM Holdings can help your business succeed.</p>
+</div>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Company Name">
+
+<textarea rows="6" placeholder="Tell us about your project"></textarea>
+
+<button type="submit">
+Request Consultation
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>LTM Holdings</h3>
+
+<p>
+Crafting Technology. Empowering Business. Driving Innovation.
+</p>
+
+<br>
+
+<p>
+© 2026 LTM Holdings. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
